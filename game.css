@@ -1,0 +1,293 @@
+.body{
+    padding: 0px;
+}
+.dice{
+    position: fixed;
+    height: 98vh;
+    background-color: aquamarine;
+    width:210px;
+    margin-left: 80%;
+    border-radius: 3vh;
+    z-index: -2;
+}
+
+.backg{
+    border-radius: 3vh;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+    z-index: -1;
+    height: 23%;
+    width: 80%;
+    background-color: rgba(1,123,198,255);
+}
+#dice_face2{
+    border-radius: 3vh;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 100%;
+}
+.crowns{
+    position: absolute;
+    z-index: 1;
+    height: 20%;
+    transition: all 50ms;
+}
+#crown3{
+    margin-left: 5.3%;
+    margin-top: 5%;
+    display: none;
+
+}
+#crown2{
+    margin-left: 65%;
+    margin-top: 5%;
+    display: none;
+
+}
+#crown1{
+    margin-left: 65%;
+    margin-top: 65%;
+    display: none;
+
+}
+#crown4{
+    margin-top: 65%;
+    margin-left: 5.3%;
+    display: none;
+
+}
+.board{
+    height: 100vh;
+    width: 100vh;
+    padding: 0px;
+    position: fixed;
+    margin-left: 25%;
+}
+#board{
+    height: 100vh;
+    position: fixed;
+    
+    margin-top: -7px;
+
+}
+.pieces{
+    height: 4%;
+   position: absolute;
+    pointer-events: none;
+    transition: all;
+    transition-duration: 0.5s;
+    
+}
+/* #green1{
+    left: 8.9%;
+    top: 40.4%;
+} */
+#green1{
+    left: 18.8%;
+    top: 10.4%;
+
+    
+}
+#green2{
+    left: 12.2%;
+    top: 17%;
+}
+#green3{
+    left: 25.4%;
+    top: 17%;
+}
+#green4{
+    left: 18.8%;
+    top: 23.6%;
+}
+.red{
+    height: 5%;
+}
+/* #red1{
+    top: 6.8%;
+    left: 55.1%;
+
+} */
+#red1{
+    top: 9.8%;
+    left: 78.3%;
+
+}
+#red2{
+    left: 71.8%;
+    top: 16.6%;
+}
+#red3{
+    left: 85%;
+    top: 16.6%;
+}
+#red4{
+    left: 78.3%;
+    top: 23.3%;
+}
+.blue{
+    filter: brightness(120%);
+}
+/* #blue1{
+    margin-left: 88.6%;
+    margin-top: 53.7%;
+} */
+    
+#blue1{
+    left: 78.6%;
+    top: 70.1%;
+}
+#blue2{
+    left: 72%;
+    top: 76.8%;
+}
+#blue3{
+    left: 85.3%;
+    top: 76.8%;
+
+}
+#blue4{
+    left: 78.6%;
+    top: 83.6%;
+}
+.yellow{
+    filter: brightness(75%);
+    height: 4.2%;
+}
+/* #yellow1{
+    left: 42.1%;
+    top: 87%;
+} */
+#yellow1{
+    left: 18.8%;
+    top: 70.1%;
+
+}
+#yellow2{
+    left: 12.2%;
+    top: 76.8%;
+
+}
+#yellow3{
+    left: 25.4%;
+    top: 76.8%;
+
+}
+#yellow4{
+    left: 18.8%;
+    top: 83.6%;
+   
+}
+@keyframes blink{
+     0%{opacity: 1;}
+     50%{opacity: 0;}
+     0% {opacity: 1;}
+}
+.blink{
+    animation: blink 0.5s infinite;
+}
+
+.dicebacks{
+    position: absolute;
+    z-index: -1;
+    height: 39.3%;
+    width: 22.5%;
+    border: 3px solid black;
+}
+#blueback{
+    background-color: rgba(1,123,198,255);
+    margin-left: 100.2%;
+    margin-top: 59%;
+    border-radius: 5%;
+}
+#redback{
+    background-color: rgba(219,38,30,255);
+    margin-left: 100.2%;
+    margin-top: -1%;
+    border-radius: 5%;
+}
+#greenback{
+    background-color: rgba(131,196,37,255);
+    margin-left: -23.4%;
+    margin-top: -1%;
+    border-radius: 5%;
+}
+#yellowback{
+    background-color: rgba(255,245,0,255);
+    margin-left: -23.4%;
+    margin-top: 59%;
+    border-radius: 5%;
+}
+#dice_face{
+    border-radius: 16%;
+    position: absolute;
+    z-index: 4;
+    height: 20%;
+    left: 101.6%;
+    top: 77.8%;
+}
+.white{
+    border-radius: 16%;
+    position: absolute;
+    background-color: aliceblue;
+    z-index: 4;
+    height: 19.5%;
+    width: 19.5%;
+    border: 2px black solid;
+}
+#whb{
+    left: 101.6%;
+    top: 77.8%;
+}
+#whr{
+    left: 101.6%;
+    top: 0.5%;
+}
+#whg{
+    left: -21.8%;
+    top: 0.5%;
+
+}
+#why{
+    left: -21.8%;
+    top: 77.8%;
+
+}
+/* red - rgba(219,38,30,255)
+   blue - rgba(1,123,198,255)
+   green - rgba(131,196,37,255)
+   yellow - rgba(255,245,0,255)
+
+
+   dice position-
+    red - 101.6 , 0.5
+    blue - 101.6 , 77.8
+    green -  -21.8 , 0.5
+    yellow - -21.8 , 77.8
+ */
+
+ .gov_slide{
+    background-color: grey;
+    position: absolute;
+    z-index: 3;
+    height: 50%;
+    width: 50%;
+    left: 25%;
+    top: 24%;
+    border: solid 3px black;
+    border-radius: 4%;
+    text-align: center;
+    display: none;
+ }
+ #gov{
+    font-size: 270%;
+
+ }
+ .win1{
+    margin-top: 10%;
+ }
+ .winners{
+    top: 1%;
+    font-size: 200%;
+ }

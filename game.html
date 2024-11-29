@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDO</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    
+        
+    </div>
+    <div class="board">
+        <img id="board" src="Ludo-Game-Template-1-scaled.webp" alt="">
+                <img id="blue1" class="blue pieces" onclick="piece_move(1)" src="Pieces/blue piece.png" alt="">
+                <img id="blue2" class="blue pieces" onclick="piece_move(2)" src="Pieces/blue piece.png" alt="">
+                <img id="blue3" class="blue pieces" onclick="piece_move(3)" src="Pieces/blue piece.png" alt="">
+                <img id="blue4" class="blue pieces" onclick="piece_move(4)" src="Pieces/blue piece.png" alt="">
+            
+                <img id="red1" class="red pieces" onclick="piece_move(1)" src="Pieces/red piece.png" alt="">
+                <img id="red2" class="red pieces" onclick="piece_move(2)" src="Pieces/red piece.png" alt="">
+                <img id="red3" class="red pieces" onclick="piece_move(3)" src="Pieces/red piece.png" alt="">
+                <img id="red4" class="red pieces" onclick="piece_move(4)" src="Pieces/red piece.png" alt="">
+
+                <img id="green1" class="green pieces" onclick="piece_move(1)" src="Pieces/green piece.png" alt="">
+                <img id="green2" class="green pieces" onclick="piece_move(2)" src="Pieces/green piece.png" alt="">
+                <img id="green3" class="green pieces" onclick="piece_move(3)" src="Pieces/green piece.png" alt="">
+                <img id="green4" class="green pieces" onclick="piece_move(4)" src="Pieces/green piece.png" alt="">
+            
+                <img id="yellow1" class="yellow pieces" onclick="piece_move(1)" src="Pieces/yellow piece.png" alt="">
+                <img id="yellow2" class="yellow pieces" onclick="piece_move(2)" src="Pieces/yellow piece.png" alt="">
+                <img id="yellow3" class="yellow pieces" onclick="piece_move(3)" src="Pieces/yellow piece.png" alt="">
+                <img id="yellow4" class="yellow pieces" onclick="piece_move(4)" src="Pieces/yellow piece.png" alt="">
+
+                <img src="pics/Crown.png" class="crowns"id = "crown1"alt="">
+                <img src="pics/Crown.png" class="crowns"id = "crown2"alt="">
+                <img src="pics/Crown.png" class="crowns"id = "crown3"alt="">
+                <img src="pics/Crown.png" class="crowns"id = "crown4"alt="">
+
+                <div class="dicebacks" id="redback">
+                    <h1 style="position: absolute;top: 70%;left: 13%;">Player 2</h1>
+                </div>
+                <div class="dicebacks" id="blueback">
+                    <h1 style="position: absolute;top: 0%;left: 13%;">Player 1</h1>
+
+                </div>
+                <div class="dicebacks" id="greenback">
+                    <h1 style="position: absolute;top: 70%;left: 13%;">Player 3</h1>
+                </div>
+                <div class="dicebacks" id="yellowback">
+                    <h1 style="position: absolute;top: 0%;left: 13%;">Player 4</h1>
+                </div>
+                <div class="white" id="whb">
+
+                </div>
+                <div class="white" id="whr">
+                    
+                </div>
+                <div class="white" id="whg">
+                    
+                </div>
+                <div class="white" id="why">
+                    
+                </div>
+            
+                
+                <img src="DICE/1.jpg" onclick="roll_dice()" id="dice_face" alt="">
+                
+                <div class="gov_slide" id="gov_slide">
+                    <h1 style=" z-index: 3;" id="gov"> Game Over !!</h1>
+                    <h2 class="win1 winners" id="win1">Player 1</h2>
+                    <h2 class="win2 winners" id="win2">Player 2</h2>
+                    <h2 class="win3 winners" id="win3">Player 3</h2>
+
+                </div>
+    </div>
+    
+   
+    <script src="game.js"></script>
+</body>
+</html>
